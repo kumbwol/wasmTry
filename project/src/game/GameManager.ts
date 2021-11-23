@@ -10,6 +10,7 @@ export class GameManager
 		imageSprite.y = 200;
 		mainContainer.addChild(imageSprite);
 
+		//THIS SHOULD ONLY WORK ONCE EXTRACTED
 		let compressedImageTexture = PIXI.Texture.from("image1");
 		let compressedImageSprite = new PIXI.Sprite(compressedImageTexture);
 		compressedImageSprite.x = 600;

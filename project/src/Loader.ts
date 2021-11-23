@@ -5,7 +5,7 @@ export class Loader
 	constructor(loader: PIXI.Loader, callback: any)
 	{
 		loader
-			.add("successAnimJSON", "./project/assets/main.json")
+			.add("image0", "./project/assets/image0.png")
 			.load(() => callback.setup());
 	}
 }

@@ -1,2 +1,3 @@
 # Project exclude paths
 /project/build/
+/node_modules

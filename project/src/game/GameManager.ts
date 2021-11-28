@@ -1,4 +1,5 @@
 import * as PIXI from 'pixi.js';
+import { ImageInjector } from "../wasm/ImageInjector";
 
 export class GameManager
 {
@@ -6,8 +7,8 @@ export class GameManager
 	{
 		let imageTexture = PIXI.Texture.from("image0");
 		let imageSprite = new PIXI.Sprite(imageTexture);
-		imageSprite.x = 200;
-		imageSprite.y = 200;
+		imageSprite.x = 220;
+		imageSprite.y = 320;
 		mainContainer.addChild(imageSprite);
 
 		//THIS SHOULD ONLY WORK ONCE EXTRACTED
@@ -16,5 +17,16 @@ export class GameManager
 		compressedImageSprite.x = 600;
 		compressedImageSprite.y = 200;
 		mainContainer.addChild(compressedImageSprite);
+
+		console.log(imageSprite);
+		let x = new ImageInjector();
+
+		x.func();
+
+		window.addEventListener("keydown", () =>
+		{
+			imageSprite.texture = PIXI.Texture.from(document.getElementById("img") as HTMLImageElement);
+			imageSprite.texture.update();
+		})
 	}
 }

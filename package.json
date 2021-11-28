@@ -1,5 +1,5 @@
 {
-	"name": "Boilerplate",
+	"name": "wasm",
 	"version": "1.0.0",
 	"description": "",
 	"main": "./index.html",
@@ -20,8 +20,8 @@
 		"@types/pixi.js": "^4.8.8",
 		"ts-loader": "^6.0.4",
 		"typescript": "^3.5.3",
-		"webpack": "^4.39.2",
-		"webpack-cli": "^3.3.7"
+		"webpack": "^5.64.2",
+		"webpack-cli": "^4.9.1"
 	},
 	"dependencies": {
 		"pixi-tweener": "0.10.0",
